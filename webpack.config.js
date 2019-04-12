@@ -11,7 +11,7 @@ module.exports = {
 	},
 	plugins: [//插件
 		new htmlWebpackPlugin({
-			template: path.join(__dirname, "./src/index.html"),
+			template: path.join(__dirname, "./index.html"),
 			filename: 'index.html'
 		}),
 		 new VueLoaderPlugin(),

@@ -1,11 +1,9 @@
 <template>
-	<h2>About page...</h2>
+	<h2>This is Member</h2>
 </template>
 
 <script>
-
 </script>
 
-<style scoped>
-
+<style>
 </style>

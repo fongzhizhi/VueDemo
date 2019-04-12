@@ -1,0 +1,5 @@
+/* 轮播图按钮 */
+.mint-swipe-indicator.is-active{
+	background: #ff1313 !important;
+	opacity: 1 ;
+}
