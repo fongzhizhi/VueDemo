@@ -20,11 +20,11 @@
 					<span class="mui-tab-label">Home</span>
 				</router-link>
 				<router-link class="mui-tab-item" to="/member">
-					<span class="mui-icon mui-icon-contact"><span class="mui-badge">9</span></span>
+					<span class="mui-icon mui-icon-contact"></span>
 					<span class="mui-tab-label">Member</span>
 				</router-link>
 				<router-link class="mui-tab-item" to="/cart">
-					<span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+					<span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge">9</span></span>
 					<span class="mui-tab-label">Cart</span>
 				</router-link>
 				<router-link class="mui-tab-item" to="/search">
@@ -44,7 +44,10 @@ export default {
 
 <style scoped>
 .header{
-	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.tabbar{
+	margin-top: 50px;
 }
 .v-enter {
   opacity: 0;

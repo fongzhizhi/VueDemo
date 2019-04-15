@@ -2,6 +2,8 @@ import VueRouter from 'vue-router';
 
 //1、视图组件
 import home from './components/tabbar/home.vue';
+	import news from './components/home/news.vue';
+	import newsInfo from './components/home/newsInfo.vue';
 import member from './components/tabbar/member.vue';
 import cart from './components/tabbar/cart.vue';
 import search from './components/tabbar/search.vue';
@@ -9,9 +11,11 @@ import search from './components/tabbar/search.vue';
 var routes = [
 	{path: '/', redirect: '/home'},
 	{path: '/home', component: home},
+		{path: '/home/news', component: news},
+		{path: '/home/newsInfo/:id', component: newsInfo},
 	{path: '/member', component: member},
 	{path: '/cart', component: cart},
-	{path: '/search', component: search}
+	{path: '/search', component: search},
 ];
 //3、路由实例
 var router  = new VueRouter({
