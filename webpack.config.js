@@ -19,6 +19,7 @@ module.exports = {
 	module: {//第三方模块
 		rules: [
 			{test: /\.css$/, use: ['style-loader', 'css-loader']},
+			{test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader']},
 			{test: /\.(jpg|png|bmp|jpeg|gif)$/, use: 'url-loader?limit=2048name=[name].[ext]'},
 			{test: /\.(ttf|svg|eot|woff|woff2)$/, use: 'url-loader'},
 			{test: /\.vue$/, use: 'vue-loader'},
