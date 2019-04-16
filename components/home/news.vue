@@ -1,7 +1,7 @@
 <template>
 	<ul class="mui-table-view">
 		<li class="mui-table-view-cell mui-media" v-for="list in newsList" :key="list.id">
-			<router-link :to="'/home/newsInfo/' + list.id">
+			<router-link :to="'/home/newsInfo/' + list.id" :createtTime="list.createTime" :views="list.views">
 				<img class="mui-media-object mui-pull-left" :src="list.imageUrl">
 				<div class="mui-media-body">
 					<h4> {{list.title}} </h4>

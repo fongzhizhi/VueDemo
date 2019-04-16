@@ -24,8 +24,7 @@
 		},
 		methods:{
 			getNewsInfo(){
-				this.$http.get('getNewsInfo/').then(result => {
-					
+				this.$http.get('getNewsInfo?id='+this.id).then(result => {
 					this.newsInfoHtml = result.body.html;
 				}, result => {
 					
