@@ -1,20 +1,22 @@
 <template>
 	<div class="newsInfo">
+		<!--标题-->
 		<h3 class="title"> {{newsInfo.title}} </h3>
 		<p class="subtitle">
 			<span>发表时间：{{newsInfo.createTime}}</span>
 			<span>浏览量：{{newsInfo.views}}</span>
 		</p>
 		<hr />
-		<div class="content" v-html="newsInfoHtml">
-			fsafs
-			fasfdsdafsadf
-			sadf
-		</div>
+		<!--内容-->
+		<div class="content" v-html="newsInfoHtml"></div>
+		<!--评论子组件-->
+		<comment :newsId="id"></comment>
 	</div>
 </template>
 
 <script>
+	//评论子组件
+	import comment from '../subcomponents/comment.vue'
 	export default {
 		data() {
 			return {
@@ -35,7 +37,10 @@
 		},
 		created(){
 			this.getNewsInfo();
-		}
+		},
+		components:{
+			comment
+		},
 	}
 </script>
 

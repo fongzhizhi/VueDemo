@@ -8,11 +8,12 @@ import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import router from './router.js'
 //Mint-UI:按需引入
-import { Header, Swipe, SwipeItem } from 'mint-ui';
+import { Header, Swipe, SwipeItem, Button } from 'mint-ui';
 
 Vue.component(Header.name, Header);
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
+Vue.component(Button.name, Button);
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
