@@ -65,8 +65,8 @@
 						id: this.newsId,
 						comment: input,
 						time: new Date().toLocaleString(),
-					}
-					this.$http.post('/addComment', data).then(result => {
+					};
+					this.$http.post('addComment', data).then(result => {
 						this.comments.unshift(data);
 						this.nowComment = '';
 					},result => {
