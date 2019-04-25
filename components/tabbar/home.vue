@@ -15,10 +15,10 @@
 				</router-link>
 			</li>
 			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-				<a href="#">
+				<router-link to="/home/shareimage">
 					<span class="mui-icon mui-icon-image"></span>
 					<div class="mui-media-body">Pictures Sharing</div>
-				</a></li>
+				</router-link></li>
 			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
 				<a href="#">
 					<span class="mui-icon mui-icon-extra mui-icon-extra-gift"></span>
