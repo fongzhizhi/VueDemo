@@ -44,7 +44,7 @@ export default {
 
 <style scoped>
 .header{
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 }
 .tabbar{
 	margin-top: 50px;
@@ -62,5 +62,15 @@ export default {
 }
 .container{
 	overflow-x: hidden;
+}
+.mint-header{
+	font-size: 40px;
+	height: 80px;
+}
+.mui-bar-tab{
+	height: 118px;
+}
+.mui-bar .mui-icon{
+	font-size: 80px;
 }
 </style>

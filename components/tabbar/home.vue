@@ -74,7 +74,7 @@
 
 <style scoped>
 	.mint-swipe {
-		height: 200px;
+		height: 600px;
 	}
 	
 	.mint-swipe-items-wrap img {
@@ -87,8 +87,14 @@
 		text-align: center;
 	}
 
-	.mui-media-body {
-		font-size: 13px !important;
+	.mui-table-view.mui-grid-view .mui-table-view-cell{
+		font-size: 60px;
+	}
+	
+	.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
+		font-size: 38px;
+		line-height: 50px;
+		height: 65px;
 	}
 
 	span.mui-icon-extra-new {

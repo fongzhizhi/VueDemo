@@ -24,12 +24,9 @@ Vue.component(Button.name, Button);
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
-Vue.http.options.root = 'http://localhost:9090';
-Vue.http.options.root = config.url;
-Vue.http.options.xhr = {
-	withCredentials: true
-} //可跨域
-Vue.http.options.emulateJSON = true; //全局配置
+Vue.http.options.root = 'http://192.168.1.102:9090' //设置VueRource的全局请求路径
+Vue.http.options.xhr = { withCredentials: true }//可跨域
+Vue.http.options.emulateJSON = true;//全局配置
 new Vue({
 	el: '#app',
 	render: f => f(App),
