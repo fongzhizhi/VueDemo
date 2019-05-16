@@ -20,10 +20,10 @@
 					<div class="mui-media-body">Pictures Sharing</div>
 				</router-link></li>
 			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-				<a href="#">
+				<router-link to="/home/goodsList">
 					<span class="mui-icon mui-icon-extra mui-icon-extra-gift"></span>
 					<div class="mui-media-body">Shoping</div>
-				</a></li>
+				</router-link></li>
 			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
 				<a href="#">
 					<span class="mui-icon mui-icon-email"><span class="mui-badge">2</span></span>

@@ -8,7 +8,6 @@ import './dist/mui/css/icons-extra.css'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import router from './router.js'
-import mui from './dist/mui/js/mui.min.js'
 //Mint-UI:按需引入
 import {
 	Header,
@@ -21,8 +20,6 @@ Vue.component(Header.name, Header);
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
 Vue.component(Button.name, Button);
-
-/* Mui('body').on('tap','a',function(){document.location.href=this.href;}); */
 
 Vue.use(VueRouter)
 Vue.use(VueResource)

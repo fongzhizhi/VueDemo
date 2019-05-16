@@ -26,19 +26,25 @@
 </template>
 
 <script>
-	
+	/*import mui from '../../dist/mui/js/mui.min.js'*/
+	//TODO:由于这个组件存在bug，这里暂时搁置
 	export default {
 		data: function(){
 			return {};
 		},
-		created: function(){
-			mui('.mui-scroll-wrapper').scroll({
+		mounted: function(){
+			/*mui('.mui-scroll-wrapper').scroll({
 				deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
 			});
+			mui('body').on('tap','a',function(){document.location.href=this.href;});
+			mui('body').on('click','a',function(){document.location.href=this.href;});*/
+			//解决引入mui.min.js后点击底部tab栏报错的问题
 		}
 	}
 </script>
 
-<style lang="scss">
-	
+<style>
+	.mui-segmented-control.mui-segmented-control-inverted {
+		width: 300px;
+	}
 </style>
