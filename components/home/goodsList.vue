@@ -1,10 +1,10 @@
 <template>
 	<div class="goodsList">
 		<div class="list" v-for="i in goodsList" :key="i">
-			<div class="good">
+			<router-link class="good" :to='"/home/goodsInfo/"+ i'>
 				<img class="goodImg" src="https://img10.360buyimg.com/n7/jfs/t26113/86/1744387083/162345/85529d06/5bebcc44N6e9ea6bc.jpg">
 				<h1 class="title">【钢化膜套装】一加手机6T 8GB+128GB 墨岩黑 光感屏幕指纹 全面屏双摄游戏</h1>
-			</div>
+			</router-link>
 
 			<div class="info">
 				<div class="price">
