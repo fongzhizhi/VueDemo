@@ -28,7 +28,7 @@
 				购买数量：
 				<div class="mui-numbox">
 					<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
-					<input class="mui-input-numbox" type="number" value="1">
+					<input class="mui-input-numbox" type="string" value="1">
 					<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
 				</div>
 			</div>
@@ -58,7 +58,7 @@ export default {
 			'https://tse4-mm.cn.bing.net/th?id=OIP.tppvIQdYRfeQSPDElgcCPgHaEH&w=300&h=166&c=7&o=5&dpr=1.25&pid=1.7']
 		}
 	},
-	mouted: function(){
+	mounted: function(){
 		mui('.mui-numbox').numbox();//初始化numbox
 	}
 }
